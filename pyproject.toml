@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "fresbys"
+version = "0.1.0"
+description = ""
+authors = ["Ada-lave <113159483+Ada-lave@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = {extras = ["email"], version = "^2.6.0"}
+fastapi = "^0.109.0"
+uvicorn = {extras = ["standart"], version = "^0.27.0.post1"}
+aiosqlite = "^0.19.0"
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.25"}
+pydantic-settings = "^2.1.0"
+alembic = "^1.13.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
